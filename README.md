@@ -8,3 +8,5 @@
 4. npm i react-chartjs-2
 5. npm i chart.js
 6. npm i numeral
+7. npm i react-leaflet
+8. npm i leaflet

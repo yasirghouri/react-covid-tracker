@@ -10,12 +10,10 @@ function InfoBox({ title, isRed, isGrey, active, cases, total, ...props }) {
       } ${isGrey && "infoBox--grey"}`}
     >
       <CardContent>
-        {/* Title */}
         <Typography className="infoBox__title" color="textSecondary">
           {title}
         </Typography>
 
-        {/* Number of Cases */}
         <h2
           className={`infoBox__cases ${!isRed && "infoBox__cases--green"} ${
             isGrey && "infoBox__cases--grey"
@@ -24,7 +22,6 @@ function InfoBox({ title, isRed, isGrey, active, cases, total, ...props }) {
           {props.isloading ? <i className="fa fa-cog fa-spin fa-fw" /> : cases}
         </h2>
 
-        {/* Total Cases */}
         <Typography className="infoBox__total" color="textSecondary">
           {total} Total
         </Typography>
